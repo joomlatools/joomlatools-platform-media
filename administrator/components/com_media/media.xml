@@ -22,9 +22,11 @@
         <folder>com_media</folder>
     </media>
 
-    <languages folder="../../../site/components/com_media">
-		<language tag="en-GB">language/en-GB.com_media.ini</language>
-	</languages>
+    <update>
+        <schemas>
+            <schemapath type="mysql">resources/updates</schemapath>
+        </schemas>
+    </update>
 
     <administration>
 
@@ -39,11 +41,6 @@
 			<folder>models</folder>
 			<folder>views</folder>
 		</files>
-
-        <languages folder="./../../administrator/components/com_media">
-			<language tag="en-GB">language/en-GB.com_media.ini</language>
-			<language tag="en-GB">language/en-GB.com_media.sys.ini</language>
-		</languages>
 
 	</administration>
 
