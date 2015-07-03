@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+	<name>com_media</name>
+	<author>Joomlatools</author>
+	<creationDate>April 2006</creationDate>
+	<copyright>(C) 2005 - 2014 Open Source Matters. All rights reserved.	</copyright>
+    <copyright>(C) 2015 Timble CVBA (http://www.timble.net)</copyright>
+    <license>GNU GPLv3 - http://www.gnu.org/licenses/gpl.html</license>
+    <creationDate>August 2011</creationDate>
+    <authorEmail>info@joomlatools.com</authorEmail>
+    <authorUrl>www.joomlatools.com</authorUrl>
+    <version>1.0.0</version>
+	<description>COM_MEDIA_XML_DESCRIPTION</description>
+
+    <files folder="../../../site/components/com_media">
+		<filename>media.php</filename>
+		<folder>helpers</folder>
+        <folder>language</folder>
+	</files>
+
+    <media folder="../../../media">
+        <folder>com_media</folder>
+    </media>
+
+    <languages folder="../../../site/components/com_media">
+		<language tag="en-GB">language/en-GB.com_media.ini</language>
+	</languages>
+
+    <administration>
+
+        <files folder="./../../administrator/components/com_media">
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>media.php</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+            <folder>language</folder>
+			<folder>layouts</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+		</files>
+
+        <languages folder="./../../administrator/components/com_media">
+			<language tag="en-GB">language/en-GB.com_media.ini</language>
+			<language tag="en-GB">language/en-GB.com_media.sys.ini</language>
+		</languages>
+
+	</administration>
+
+</extension>
+
