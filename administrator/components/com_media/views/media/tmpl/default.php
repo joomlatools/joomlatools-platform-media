@@ -32,7 +32,7 @@ $input = JFactory::getApplication()->input;
 	<div class="span10">
 		<?php echo $this->loadTemplate('navigation'); ?>
 		<?php if (($user->authorise('core.create', 'com_media')) and $this->require_ftp) : ?>
-			<form action="../../../../../../../www/platform/web/index.php?option=com_media&amp;task=ftpValidate" name="ftpForm" id="ftpForm" method="post">
+			<form action="index.php?option=com_media&amp;task=ftpValidate" name="ftpForm" id="ftpForm" method="post">
 				<fieldset title="<?php echo JText::_('COM_MEDIA_DESCFTPTITLE'); ?>">
 					<legend><?php echo JText::_('COM_MEDIA_DESCFTPTITLE'); ?></legend>
 					<?php echo JText::_('COM_MEDIA_DESCFTP'); ?>
@@ -45,7 +45,7 @@ $input = JFactory::getApplication()->input;
 			</form>
 		<?php endif; ?>
 
-		<form action="../../../../../../../www/platform/web/index.php?option=com_media" name="adminForm" id="mediamanager-form" method="post" enctype="multipart/form-data" >
+		<form action="index.php?option=com_media" name="adminForm" id="mediamanager-form" method="post" enctype="multipart/form-data" >
 			<input type="hidden" name="task" value="" />
 			<input type="hidden" name="cb1" id="cb1" value="0" />
 			<input class="update-folder" type="hidden" name="folder" id="folder" value="<?php echo $this->state->folder; ?>" />
@@ -67,7 +67,7 @@ $input = JFactory::getApplication()->input;
 			</form>
 		</div>
 		<div id="collapseFolder" class="collapse">
-			<form action="../../../../../../../www/platform/web/index.php?option=com_media&amp;task=folder.create&amp;tmpl=<?php echo $input->getCmd('tmpl', 'index');?>" name="folderForm" id="folderForm" class="form-inline" method="post">
+			<form action="index.php?option=com_media&amp;task=folder.create&amp;tmpl=<?php echo $input->getCmd('tmpl', 'index');?>" name="folderForm" id="folderForm" class="form-inline" method="post">
 					<div class="path">
 						<input type="text" id="folderpath" readonly="readonly" class="update-folder" />
 						<input type="text" id="foldername" name="foldername" />
@@ -79,10 +79,10 @@ $input = JFactory::getApplication()->input;
 		</div>
 		<?php endif;?>
 
-		<form action="../../../../../../../www/platform/web/index.php?option=com_media&amp;task=folder.create&amp;tmpl=<?php echo $input->getCmd('tmpl', 'index');?>" name="folderForm" id="folderForm" method="post">
+		<form action="index.php?option=com_media&amp;task=folder.create&amp;tmpl=<?php echo $input->getCmd('tmpl', 'index');?>" name="folderForm" id="folderForm" method="post">
 			<div id="folderview">
 				<div class="view">
-					<iframe class="thumbnail" src="../../../../../../../www/platform/web/index.php?option=com_media&amp;view=mediaList&amp;tmpl=component&amp;folder=<?php echo $this->state->folder;?>" id="folderframe" name="folderframe" width="100%" height="500px" marginwidth="0" marginheight="0" scrolling="auto"></iframe>
+					<iframe class="thumbnail" src="index.php?option=com_media&amp;view=mediaList&amp;tmpl=component&amp;folder=<?php echo $this->state->folder;?>" id="folderframe" name="folderframe" width="100%" height="500px" marginwidth="0" marginheight="0" scrolling="auto"></iframe>
 				</div>
 				<?php echo JHtml::_('form.token'); ?>
 			</div>

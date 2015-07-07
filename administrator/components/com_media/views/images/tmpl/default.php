@@ -20,7 +20,7 @@ $input = JFactory::getApplication()->input;
 var image_base_path = '<?php $params = JComponentHelper::getParams('com_media');
 echo $params->get('image_path', 'images'); ?>/';
 </script>
-<form action="../../../../../../../www/platform/web/index.php?option=com_media&amp;asset=<?php echo $input->getCmd('asset');?>&amp;author=<?php echo $input->getCmd('author'); ?>" class="form-vertical" id="imageForm" method="post" enctype="multipart/form-data">
+<form action="index.php?option=com_media&amp;asset=<?php echo $input->getCmd('asset');?>&amp;author=<?php echo $input->getCmd('author'); ?>" class="form-vertical" id="imageForm" method="post" enctype="multipart/form-data">
 	<div id="messages" style="display: none;">
 		<span id="message"></span><?php echo JHtml::_('image', 'media/dots.gif', '...', array('width' => 22, 'height' => 12), true) ?>
 	</div>
@@ -42,7 +42,7 @@ echo $params->get('image_path', 'images'); ?>/';
 		</div>
 	</div>
 
-	<iframe id="imageframe" name="imageframe" src="../../../../../../../www/platform/web/index.php?option=com_media&amp;view=imagesList&amp;tmpl=component&amp;folder=<?php echo $this->state->folder?>&amp;asset=<?php echo $input->getCmd('asset');?>&amp;author=<?php echo $input->getCmd('author');?>"></iframe>
+	<iframe id="imageframe" name="imageframe" src="index.php?option=com_media&amp;view=imagesList&amp;tmpl=component&amp;folder=<?php echo $this->state->folder?>&amp;asset=<?php echo $input->getCmd('asset');?>&amp;author=<?php echo $input->getCmd('author');?>"></iframe>
 
 	<div class="well">
 		<div class="row">
