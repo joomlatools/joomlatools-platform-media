@@ -1,6 +1,6 @@
 # Joomla Media Extension
 
-## What is Joomla Finder?
+## What is Joomla Media?
 
 Joomla Media is a file and media management extension for the [Joomlatools Platform](https://github.com/joomlatools/joomla-platform).
 
@@ -36,7 +36,7 @@ feature branch for testing before merging it into `develop`.
 
 ## License 
 
-Joomla Media is open-source software licensed under the [GPLv3 license](https://github.com/joomlatools/joomla-platform-finder/blob/master/LICENSE.txt).
+Joomla Media is open-source software licensed under the [GPLv3 license](https://github.com/joomlatools/joomla-platform-media/blob/master/LICENSE.txt).
 
 [gitflow-model]: http://nvie.com/posts/a-successful-git-branching-model/
 
