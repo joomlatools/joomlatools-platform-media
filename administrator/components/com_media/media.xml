@@ -14,19 +14,12 @@
 
     <files folder="../../../site/components/com_media">
 		<filename>media.php</filename>
-		<folder>helpers</folder>
         <folder>language</folder>
 	</files>
 
     <media folder="../../../media">
         <folder>com_media</folder>
     </media>
-
-    <update>
-        <schemas>
-            <schemapath type="mysql">resources/updates</schemapath>
-        </schemas>
-    </update>
 
     <administration>
 
