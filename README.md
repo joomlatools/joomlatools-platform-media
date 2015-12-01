@@ -18,7 +18,7 @@ Joomla Media can and should be installed by using [Composer](https://getcomposer
 Go to the root directory of your Joomla Platform installation using the command line and execute following command:
 
 ```
-composer require joomlatools/joomla-platform-media:1.*
+composer require joomlatools/platform-media:1.*
 ```
 
 ## Contributing
