@@ -32,14 +32,14 @@ JFactory::getDocument()->addScriptDeclaration(
 
 JHtml::_('behavior.keepalive');
 JHtml::_('bootstrap.framework');
-JHtml::_('script', 'media/mediamanager.min.js', false, true);
-JHtml::_('script', 'media/mediaelement-and-player.js', false, true);
-JHtml::_('stylesheet', 'media/mediaelementplayer.css', array(), true);
+JHtml::_('script', 'com_media/mediamanager.min.js', false, true);
+JHtml::_('script', 'com_media/mediaelement-and-player.js', false, true);
+JHtml::_('stylesheet', 'com_media/mediaelementplayer.css', array(), true);
 JHtml::_('stylesheet', 'system/mootree.css', array(), true);
 
 if ($lang->isRtl())
 {
-	JHtml::_('stylesheet', 'media/mootree_rtl.css', array(), true);
+	JHtml::_('stylesheet', 'com_media/mootree_rtl.css', array(), true);
 }
 ?>
 <div class="row-fluid">

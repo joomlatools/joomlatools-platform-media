@@ -21,12 +21,12 @@ JHtml::_('bootstrap.tooltip', '.noHtmlTip', array('html' => false));
 
 // Include jQuery
 JHtml::_('jquery.framework');
-JHtml::_('script', 'media/popup-imagemanager.min.js', false, true, false, false, true);
-JHtml::_('stylesheet', 'media/popup-imagemanager.css', array(), true);
+JHtml::_('script', 'com_media/popup-imagemanager.min.js', false, true, false, false, true);
+JHtml::_('stylesheet', 'com_media/popup-imagemanager.css', array(), true);
 
 if ($lang->isRtl())
 {
-	JHtml::_('stylesheet', 'media/popup-imagemanager_rtl.css', array(), true);
+	JHtml::_('stylesheet', 'com_media/popup-imagemanager_rtl.css', array(), true);
 }
 
 JFactory::getDocument()->addScriptDeclaration(
@@ -40,7 +40,7 @@ JFactory::getDocument()->addScriptDeclaration(
 	<form action="index.php?option=com_media&amp;asset=<?php echo $input->getCmd('asset');?>&amp;author=<?php echo $input->getCmd('author'); ?>" class="form-vertical" id="imageForm" method="post" enctype="multipart/form-data">
 
 		<div id="messages" style="display: none;">
-			<span id="message"></span><?php echo JHtml::_('image', 'media/dots.gif', '...', array('width' => 22, 'height' => 12), true) ?>
+			<span id="message"></span><?php echo JHtml::_('image', 'com_media/dots.gif', '...', array('width' => 22, 'height' => 12), true) ?>
 		</div>
 
 		<div class="well">

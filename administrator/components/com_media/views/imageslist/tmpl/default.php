@@ -11,11 +11,11 @@ defined('_JEXEC') or die;
 
 $lang = JFactory::getLanguage();
 
-JHtml::_('stylesheet', 'media/popup-imagelist.css', array(), true);
+JHtml::_('stylesheet', 'com_media/popup-imagelist.css', array(), true);
 
 if ($lang->isRtl())
 {
-	JHtml::_('stylesheet', 'media/popup-imagelist_rtl.css', array(), true);
+	JHtml::_('stylesheet', 'com_media/popup-imagelist_rtl.css', array(), true);
 }
 
 JFactory::getDocument()->addScriptDeclaration("var ImageManager = window.parent.ImageManager;");
