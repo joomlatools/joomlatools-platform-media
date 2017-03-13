@@ -24,6 +24,8 @@
 
     <administration>
 
+		<menu img="class:media" link="option=com_media">COM_MEDIA</menu>
+
         <files folder="./../../administrator/components/com_media">
 			<filename>config.xml</filename>
 			<filename>controller.php</filename>
