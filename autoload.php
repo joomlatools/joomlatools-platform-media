@@ -7,6 +7,10 @@
  * @link		https://github.com/joomlatools/joomlatools-platform for the canonical source repository
  */
 
+if (!defined('JOOMLATOOLS_PLATFORM')) {
+	return;
+}
+
 JLoader::register('MediaHelperMedia', JPATH_ADMINISTRATOR . '/components/com_media/helper/media.php');
 JLoader::registerAlias('JHelperMedia', 'MediaHelperMedia');
 
