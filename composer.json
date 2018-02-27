@@ -1,7 +1,7 @@
 {
   "name": "joomlatools/platform-media",
   "type": "joomlatools-composer",
-  "license": "GPLv3",
+  "license": "GPL-3.0-only",
   "description": "File and media management extension for the Joomlatools Platform",
   "keywords": ["joomla", "extension", "platform"],
   "homepage": "https://github.com/joomlatools/joomlatools-platform-media",
